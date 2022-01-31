@@ -3,7 +3,7 @@
   <h1></h1>
   
   <body>
-    <a href="project1.html">Responsive Web Certification</a>
+    <a href="ALL_ProjectsinRWC.html">Responsive Web Certification</a>
 
   </body>
  </html>
