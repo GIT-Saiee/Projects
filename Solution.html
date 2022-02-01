@@ -1,18 +1,23 @@
 <html>
   <style>
-    <!--8.Responsively resizing the relative to the width of its parent element -->
-    .title{
-      color:blue;
+    
+    #title{
+      color:red;
       text-align: center;
     }
-    .image
+    #image-div
     {
+      color:lightyellow;
+    }
+    <!--8.Responsively resizing the relative to the width of its parent element -->
+    #image
+    {
+      max-width: 100%;
+      height: auto;
+      <!--To center the img element within its parent element-->
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: 100%;
-      height: auto;
-      
     }
   </style>
 <!--1.Adding id=main -->
@@ -22,7 +27,7 @@
   <!--3.Adding id="img-div"-->
   <figure id="img-div">
     <!--4.Adding id="Image"-->
-    <img id ="image"src=mother-teresa.jpg></img>
+    <img id="image"src=mother-teresa.jpg></img>
     <!--5.Adding id=img-caption-->
     <figcaption id="image-caption">Mother Mary Teresa Bojaxhiu</figcaption>
   </figure>
