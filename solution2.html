@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+input:invalid {
+  border: 2px red;
+}
+input:invalid:required {
+  background-image: linear-gradient(to right, lightyellow, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+#box-container{
+	width:50%;	
+	height:50%;
+    background-color:dodgerblue;
+   	display:box;
+   	margin-left:auto;
+    margin-right:auto;
+    
+    }
+    #box1
+    {
+    	padding:50px;
+    }
+    
+body{
+	background-color:rgba(0,0,205,0.2);
+    opacity:0.8;
+    align:center;
+}
+#name{
+    width:50%;
+    height:auto;
+    }
+#email{
+	width:50%;
+    height:auto;
+    }
+#title{
+	align:center;
+  }
+</style>
+<head>
+<title>Survey Form</title>
+</head>
+<body>
+<!--1.Adding an id title -->
+<h1 id="title">Free Code Camp Survey</h1>
+  
+<!--2.Adding an id to P-->
+<p id ="description">Thank you for taking the time to help us improve the platform</p>
+  
+<div id="box-container">
+  
+  <!--3.Adding an id to form-->
+  <form id ="survey-form">
+	  <div id="box1">
+      
+    <!--4.Enter name field in the form, 10.Adding id name-label-->
+	  <label for="fname" id ="name-label">Name</label><br>
+    <input type="text" id="name" name="fname" placeholder="Your Name">
+    <br>
+    
+    <!--5.Enter Email field in the form, 10.Adding email-label-->
+    <!--6.HTML5validation error for emails not formatted correctly--> 
+    <label id="email-label" for="email" >Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Your Valid Email Address" maxlength=30  pattern="[A-Z|a-z|[$%&#!]][@]{1}[.com]{1}" required><br>
+    <br>
+      
+    <!--7.Enter   A number field for age, 10.Adding id for number label-->
+    <!--8& 9. HTML5validation error if non-number or numbers outside the range of the number input,entered-->
+  <label id="number-label" for="age" >Age(optional)</label><br>
+    <input type="number" id="number" placeholder ="Your Age" name="age" maxlength=3 min=8 max=100><br>
+    </label >
+    
+    <!--13.-->
+    <label>Would you recommend freeCodeCamp to a friend?</label></br>
+  <label><input id="Definitely" type="radio" name="join-type" checked>Definitely</label><br>
+  <label><input id="Maybe" type="radio" name="join-type" checked>Maybe</label><br>
+  <label><input id="Notsure" type="radio" name="join-type" checked>Not sure</label>
+  
+  <label>What is your favorite feature of free Code Camp?</label></br>
+  <select name="features" id="feature">
+    <option value="options">Select an option</option>
+    <option value="challenges">Challenges</option>
+    <option value="projects">Projects</option>
+    <option value="community">Community</option>
+    <option value="opensrc">Open Source</option>
+  </select>
+  <br><br>
+  
+  <button type="submit">Submit</button>
+    
+    </div>
+</form>
+</div>
+
+</body>
+</html>
