@@ -83,12 +83,12 @@ body{
     </label >
     
     <!--13.-->
-    <label>Would you recommend freeCodeCamp to a friend?</label></br>
+    <label>Would you recommend freeCodeCamp to a friend?</label><br>
   <label><input id="Definitely" type="radio" name="join-type" checked>Definitely</label><br>
   <label><input id="Maybe" type="radio" name="join-type" checked>Maybe</label><br>
   <label><input id="Notsure" type="radio" name="join-type" checked>Not sure</label>
   
-  <label>What is your favorite feature of free Code Camp?</label></br>
+  <label>What is your favorite feature of free Code Camp?</label><br>
   <select name="features" id="feature">
     <option value="options">Select an option</option>
     <option value="challenges">Challenges</option>
@@ -96,11 +96,23 @@ body{
     <option value="community">Community</option>
     <option value="opensrc">Open Source</option>
   </select>
-  <br><br>
-  
-  <button type="submit">Submit</button>
-    
-    </div>
+  <br>
+<label>What would you like to see improved?(Check all that apply)</label>
+ <label for="FEP"><input id="improvements" type="checkbox" name="FEP"> Front-end Projects</label><br>
+ <label for="BEP"><input id="improvements" type="checkbox" name="BEP">Back-end Projects </label><br>
+ <label for="DV"><input id="improvements" type="checkbox" name="DV">Data Visualization</label><br>
+ <label for="Challenges"><input id="improvements" type="checkbox" name="Challenges">Challenges </label><br>
+ <label for="OSC"><input id="improvements" type="checkbox" name="OSC">OpenSourceCommunity</label><br>
+ <label for="GHR"><input id="improvements" type="checkbox" name="GHR">Gitter help rooms </label><br>
+ <label for="VID"><input id="improvements" type="checkbox" name="VID"> Videos</label><br>
+ <label for="CMU"><input id="improvements" type="checkbox" name="CMU">City Meetups </label><br>
+ <label for="WIKI"><input id="improvements" type="checkbox" name="WIKI"> WIKI</label><br>
+ <label for="FORUM"><input id="improvements" type="checkbox" name="FORUM">FORUM </label><br>
+ <label for="AC"><input id="improvements" type="checkbox" name="AC">Additional Courses </label><br>
+  </div>
+<label>Any comments or suggestions?</label>
+<input type="text" width=90% height=10% id="comment-box" name="comments" placeholder="Enter your comment here">
+	<button type="submit">Submit</button>
 </form>
 </div>
 
