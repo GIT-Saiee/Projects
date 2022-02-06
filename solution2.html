@@ -68,28 +68,34 @@ body{
 	  <div id="box1">
       
     <!--4.Enter name field in the form, 10.Adding id name-label, 11. adding placeholder text-->
-	  <label for="fname" id ="name-label">Name</label><br>
+	<div>
+    <label for="fname" id ="name-label">Name</label><br>
     <input type="text" id="name" name="fname" placeholder="Your Name">
     <br>
-    
+		  </div>
+		  <div>
     <!--5.Enter Email field in the form, 10.Adding email-label, 11. adding placeholder text-->
     <!--6.HTML5validation error for emails not formatted correctly--> 
     <label id="email-label" for="email" >Email</label><br>
     <input type="text" id="email" name="email" placeholder="Your Valid Email Address" maxlength=30  pattern="[A-Z|a-z|[$%&#!]][@]{1}[.com]{1}" required><br>
     <br>
-      
+		  </div>
+		  <div>
     <!--7.Enter   A number field for age, 10.Adding id for number label,11. adding placeholder text-->
     <!--8& 9. HTML5validation error if non-number or numbers outside the range of the number input,entered-->
   <label id="number-label" for="age" >Age(optional)</label><br>
     <input type="number" id="number" placeholder ="Your Age" name="age" maxlength=3 min=8 max=100><br>
     </label >
+	  </div>
+	  <div>
     
   <!--13.Adding Radio buttons-->
   <label>Would you recommend freeCodeCamp to a friend?</label><br>
   <label><input id="Definitely" type="radio" name="join-type" checked>Definitely</label><br>
   <label><input id="Maybe" type="radio" name="join-type" checked>Maybe</label><br>
   <label><input id="Notsure" type="radio" name="join-type" checked>Not sure</label><br>
-	  
+	  </div>
+<div>
   <!--12.Adding dropdown box-->
   <label>What is your favorite feature of free Code Camp?</label><br>
   <select name="features" id="dropdown">
@@ -100,6 +106,8 @@ body{
     <option value="opensrc">Open Source</option>
   </select>
   <br>
+	  </div>
+<div>
 <!--14.Adding checkboxes-->
 <label>What would you like to see improved?(Check all that apply)</label><br>
  <label for="FEP"><input id="improvements" type="checkbox" name="FEP"> Front-end Projects</label><br>
@@ -113,9 +121,13 @@ body{
  <label for="WIKI"><input id="improvements" type="checkbox" name="WIKI"> WIKI</label><br>
  <label for="FORUM"><input id="improvements" type="checkbox" name="FORUM">FORUM </label><br>
  <label for="AC"><input id="improvements" type="checkbox" name="AC">Additional Courses </label><br>
+	  </div>
+<div>
 <!--15.Adding textarea to enter comments-->
 <label>Any comments or suggestions?</label>
 <input type="text" id="comment-box" name="comments" placeholder="Enter your comment here"><br>
+	  </div>
+	  <div>
 <!--16.Adding a button to submit the form-->
 <button type="submit">Submit</button>
 </div>
