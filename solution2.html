@@ -41,11 +41,13 @@ body{
 #name,#email,#number,#dropdown{
     width:90%;
     height:auto;
+	border-radius:10px;
     }
 #comment-box
 	{
 		width:50%;
-		height:60%;
+		height:90%;
+		border-radius:10px;
 	}
 #title,#description{
 	text-align:center;
@@ -65,37 +67,44 @@ body{
   
   <!--3.Adding an id to form-->
   <form id ="survey-form">
-	  <div id="box1">
+<div id="box1">
       
     <!--4.Enter name field in the form, 10.Adding id name-label, 11. adding placeholder text-->
-	<div>
+    <div>
     <label for="fname" id ="name-label">Name</label><br>
     <input type="text" id="name" name="fname" placeholder="Your Name">
+    </div>
     <br>
-		  </div>
-		  <div>
+    <br>
+	
+    <div>
     <!--5.Enter Email field in the form, 10.Adding email-label, 11. adding placeholder text-->
     <!--6.HTML5validation error for emails not formatted correctly--> 
     <label id="email-label" for="email" >Email</label><br>
     <input type="text" id="email" name="email" placeholder="Your Valid Email Address" maxlength=30  pattern="[A-Z|a-z|[$%&#!]][@]{1}[.com]{1}" required><br>
+    </div>
     <br>
-		  </div>
-		  <div>
+    <br>
+	
+    <div>
     <!--7.Enter   A number field for age, 10.Adding id for number label,11. adding placeholder text-->
     <!--8& 9. HTML5validation error if non-number or numbers outside the range of the number input,entered-->
   <label id="number-label" for="age" >Age(optional)</label><br>
-    <input type="number" id="number" placeholder ="Your Age" name="age" maxlength=3 min=8 max=100><br>
+    <input type="number" id="number" placeholder ="Your Age" name="age" maxlength=3 min=8 max=100>
     </label >
-	  </div>
-	  <div>
-    
+    </div>
+    <br>  
+    <br>	  
+    <div>
   <!--13.Adding Radio buttons-->
   <label>Would you recommend freeCodeCamp to a friend?</label><br>
   <label><input id="Definitely" type="radio" name="join-type" checked>Definitely</label><br>
   <label><input id="Maybe" type="radio" name="join-type" checked>Maybe</label><br>
   <label><input id="Notsure" type="radio" name="join-type" checked>Not sure</label><br>
-	  </div>
-<div>
+   </div> 
+   <br>	 
+   <br>	  
+   <div>
   <!--12.Adding dropdown box-->
   <label>What is your favorite feature of free Code Camp?</label><br>
   <select name="features" id="dropdown">
@@ -105,8 +114,10 @@ body{
     <option value="community">Community</option>
     <option value="opensrc">Open Source</option>
   </select>
+  </div>
+	  
   <br>
-	  </div>
+  <br>
 <div>
 <!--14.Adding checkboxes-->
 <label>What would you like to see improved?(Check all that apply)</label><br>
@@ -120,17 +131,30 @@ body{
  <label for="CMU"><input id="improvements" type="checkbox" name="CMU">City Meetups </label><br>
  <label for="WIKI"><input id="improvements" type="checkbox" name="WIKI"> WIKI</label><br>
  <label for="FORUM"><input id="improvements" type="checkbox" name="FORUM">FORUM </label><br>
- <label for="AC"><input id="improvements" type="checkbox" name="AC">Additional Courses </label><br>
-	  </div>
+ <label for="AC"><input id="improvements" type="checkbox" name="AC">Additional Courses </label>
+</div>
+	  
+<br>
+<br>
+	  
 <div>
 <!--15.Adding textarea to enter comments-->
 <label>Any comments or suggestions?</label><br>
 <input type="text" id="comment-box" name="comments" placeholder="Enter your comment here"><br>
-	  </div>
-	  <div>
+</div>
+
+<br>
+<br>
+
+<div>
 <!--16.Adding a button to submit the form-->
 <button type="submit">Submit</button>
 </div>
+
+<br>
+<br>
+	  
+</div>	  
 </form>
 </div>
 
