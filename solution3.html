@@ -1,24 +1,21 @@
 <html>
   <style>
+<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" type="text/css">
+
     #header{
-       display:grid;
-      grid-template-columns:2fr 1fr;
+      background:PaleTurquoise;
+      display:grid;
+      grid-template-columns:auto 1fr 1fr;
      
     }
     .header-txt
     {
-      background:PaleTurquoise;
-      text-color:purple;
-      padding-right:15%;
-      padding-top:10%;
+      margin:auto;
+      color:purple;
       font-style: italic;
       font-weight: bold;
-      font-family: "Helvetica Neue", "Arial", sans-serif;
-      font-size:5 rem;
-      grid-column:1/3;
-      grid-row:1/3;
-      justify-self:center;
-      align-self:center;
+      font-family: Sofia,"Helvetica Neue", "Arial", sans-serif;
+      
     }
     #header-img
     {
@@ -26,9 +23,12 @@
     }
     .nav-bar
     {
-      margin:0;
-      align-self:end;
-      opacity:0.5; 
+      align-self:end; 
+    }
+    .nav-link
+    {
+        font-weight: bold;
+        padding:1em;
     }
   </style>
  <header id="header">
