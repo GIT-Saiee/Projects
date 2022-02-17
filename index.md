@@ -4,7 +4,7 @@
   
   <body>
     <a href="ALL_ProjectsinRWC.html">Responsive Web Certification</a>
-    <a href="Python/bubble.html">Responsive Web Certification</a>
+    <a href="Python/index.html">Python Programming Snippets</a>
 
   </body>
  </html>
