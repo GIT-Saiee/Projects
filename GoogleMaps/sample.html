@@ -14,6 +14,14 @@
      // Initialize and add the map
       function initMap() {
         // The location of Livermore Shiva Vishnu Temple 37.713568386357025, -121.73255580672549
+       const contentString =
+             '<div id="content">' +
+             '<div id="siteNotice">' +
+             "</div>" +
+             '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+             '<div id="bodyContent">' +
+              "<p><b>Shiva-Vishnu Temple</b></p>" +"</div>" +
+              "</div>";
         const svt = { lat: 37.713568386357025, lng: -121.73255580672549 };
         // The map, centered at Hindu Temple
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -25,6 +33,13 @@
           position: svt,
           map: map,
         });
+       marker.addListener("click", () => {
+          infowindow.open({
+          anchor: marker,
+           map,
+           shouldFocus: false,
+    });
+  });
       }
    </script>
  </head>
