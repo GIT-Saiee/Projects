@@ -18,7 +18,7 @@
      
       let map: google.maps.Map, infoWindow2: google.maps.InfoWindow;
     // Initialize and add the map
-      function initMap() {
+      function initMap():void {
     // The location of Livermore Shiva Vishnu Temple 37.713568386357025, -121.73255580672549
        const contentString =
              '<div id="content">' +
@@ -31,7 +31,7 @@
         const svt = { lat: 37.713568386357025, lng: -121.73255580672549 };
         // The map, centered at Hindu Temple
          map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
+          zoom: 6,
           center: svt,
         });
         // The marker, positioned at SVT
@@ -83,17 +83,9 @@
     }
   });
 }
-function handleLocationError(
-  browserHasGeolocation: boolean,
-  infoWindow2: google.maps.InfoWindow,
-  pos: google.maps.LatLng
-) {
+function handleLocationError(browserHasGeolocation: boolean, infoWindow2: google.maps.InfoWindow, pos: google.maps.LatLng) {
   infoWindow2.setPosition(pos);
-  infoWindow2.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
-  );
+  infoWindow2.setContent(browserHasGeolocation? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
   infoWindow2.open(map);
 }
        
