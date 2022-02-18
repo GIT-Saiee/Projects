@@ -16,7 +16,7 @@
      // failed.", it means you probably did not give permission for the browser to
      // locate you.
      
-      let map: google.maps.Map, infoWindow2: google.maps.InfoWindow;
+   
     // Initialize and add the map
       function initMap():void {
     // The location of Livermore Shiva Vishnu Temple 37.713568386357025, -121.73255580672549
@@ -30,7 +30,7 @@
               "</div>";
         const svt = { lat: 37.713568386357025, lng: -121.73255580672549 };
         // The map, centered at Hindu Temple
-         map = new google.maps.Map(document.getElementById("map"), {
+        const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 6,
           center: svt,
         });
@@ -51,7 +51,7 @@
            shouldFocus: false,
          });
        });
-       infoWindow2 = new google.maps.InfoWindow();
+       const infoWindow2 = new google.maps.InfoWindow();
 
        const locationButton = document.createElement("button");
 
