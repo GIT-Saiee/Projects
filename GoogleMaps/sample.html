@@ -33,6 +33,9 @@
           position: svt,
           map: map,
         });
+       const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
        marker.addListener("click", () => {
           infowindow.open({
           anchor: marker,
