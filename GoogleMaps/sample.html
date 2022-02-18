@@ -13,16 +13,16 @@
    <script>
      // Initialize and add the map
       function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
+        // The location of Livermore Shiva Vishnu Temple 37.713568386357025, -121.73255580672549
+        const svt = { lat: 37.713568386357025, lng: -121.73255580672549 };
+        // The map, centered at Hindu Temple
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
-          center: uluru,
+          center: svt,
         });
-        // The marker, positioned at Uluru
+        // The marker, positioned at SVT
         const marker = new google.maps.Marker({
-          position: uluru,
+          position: svt,
           map: map,
         });
       }
