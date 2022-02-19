@@ -1,4 +1,4 @@
-<script>
+
       // Initialize and add the map
       function initMap() {
         // The location of SVT,Livermore 37.71330527803247, -121.73227685704794
@@ -27,4 +27,4 @@
         marker.addListener("click", () => {infowindow1.open({anchor: marker, map, shouldFocus: false,});
        });
       }
-</script>
+
