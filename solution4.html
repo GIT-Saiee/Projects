@@ -6,37 +6,52 @@
       }
       .main-section{
       }
-      .left-nav{
-          margin: 0;
-          display: block;
-          width: 60px;
-          background-color: #dddddd;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-          border-bottom: 3px solid black;
+      #left-nav ul {
+          border: 1px solid;
+          height: 207px;
+       }
+      #left-nav li{
+          color: #4d4e53;
+          border-top: 1px solid;
+          list-style: none;
+          position: relative;
+          width: 100%;
         }
+      #left-nav  {
+          background-color: white;
+          position: absolute;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          max-height: 275px;
+          border: none;
+          z-index: 1;
+          border-bottom: 2px solid;
+    }
+
     </style>
-  <div class="left-nav">
-    <h1>JS Documentation</h1>
-    <a href="#Introduction">Introduction</a>
-    <a href="#What_you_should_already_know">What you should already know</a>
-    <a href="#Javascript_and_Java">JavaScript and Java</a>
-    <a href="#Hello_world">Hello world</a>
-    <a href="#Variables">Variables</a>
-    <a href="#Declaring_variables">Declaring variables</a>
-    <a href="#Variable_scope">Variable scope</a>
-    <a href="#Global_variables">Global variables</a>
-    <a href="#Constants">Constants</a>
-    <a href="#Data_types">Data types</a>
-    <a href="#if_else_statement">if...else statement</a>
-    <a href="#while_statement">while statement</a>
-    <a href="#Function_declarations">Function declarations</a>
-    <a href="#Reference">Reference</a>
-</div>
+ 
     
   </head>
+   <nav id="left-nav">
+    <header>JS Documentation</header>
+    <ul>
+      <li><a href="#Introduction">Introduction</a></li>
+      <li><a href="#What_you_should_already_know">What you should already know</a></li>
+      <li><a href="#Javascript_and_Java">JavaScript and Java</a></li>
+      <li><a href="#Hello_world">Hello world</a></li>
+      <li><a href="#Variables">Variables</a></li>
+      <li><a href="#Declaring_variables">Declaring variables</a></li>
+      <li><a href="#Variable_scope">Variable scope</a></li>
+      <li><a href="#Global_variables">Global variables</a></li>
+      <li><a href="#Constants">Constants</a></li>
+      <li><a href="#Data_types">Data types</a></li>
+      <li><a href="#if_else_statement">if...else statement</a></li>
+      <li><a href="#while_statement">while statement</a></li>
+      <li><a href="#Function_declarations">Function declarations</a></li>
+      <li><a href="#Reference">Reference</a></li>
+</nav>
   <body>
     <main id="main-doc">
       <div class="main-section" id="Introduction">
